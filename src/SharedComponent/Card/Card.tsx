@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Card = () => {
   return (
-    <article className="group transition duration-700  hover:scale-105 flex rounded-md max-w-sm flex-col overflow-hidden border border-neutral-300 bg-neutral-50 hover:bg-orange-50 text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
+    <article className="group transition duration-200  hover:scale-105 flex rounded-md max-w-sm flex-col overflow-hidden border border-neutral-300 bg-neutral-50 hover:bg-orange-50 text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
       {/* Image */}
       <div className="h-44 md:h-64 overflow-hidden">
         <img
@@ -72,8 +73,8 @@ const Card = () => {
           timekeeping, featuring a sleek profile and clear display.
         </p>
         {/* Button */}
-        <button
-          type="button"
+        <Link href={'/courses/123'}
+         
           className="flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap bg-black px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-100 transition   dark:text-black dark:focus-visible:outline-white rounded-md "
         >
           <svg
@@ -90,7 +91,7 @@ const Card = () => {
             />
           </svg>
           See more
-        </button>
+        </Link>
       </div>
     </article>
   );
