@@ -74,8 +74,8 @@ const Footer: React.FC = () => {
                 <h2 className="inline-block text-xl pb-4 mb-4 border-b-4 border-blue-500">Contact Information</h2>
               </div>
               <ul className="leading-8 text-[15px]">
-                <li>Email: <a href="mailto:info@tailwindow.com" className="hover:text-blue-400">info@tailwindow.com</a></li>
-                <li>Address: 1234 Tailwind Street, City, Country</li>
+                <li>Email: <a href="mailto:izonesinfo@gmail.com" className="hover:text-blue-400">izonesinfo@gmail.com</a></li>
+                <li>Address: Sk's iZone, Winnipeg, MB, Canada, Manitoba</li>
               </ul>
             </div>
           </div>

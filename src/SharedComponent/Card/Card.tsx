@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const Card = () => {
+const Card = ({data}:any) => {
   return (
     <article className="group transition duration-200  hover:scale-105 flex rounded-md max-w-sm flex-col overflow-hidden border border-neutral-300 bg-neutral-50 hover:bg-orange-50 text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
       {/* Image */}
@@ -22,7 +22,7 @@ const Card = () => {
               className="text-lg lg:text-xl font-bold text-neutral-900 dark:text-white"
               aria-describedby="productDescription"
             >
-              CASIO G-SHOCK GA2100
+             {data?.name}
             </h3>
             {/* Rating */}
             <div className="flex items-center gap-1">
@@ -61,16 +61,20 @@ const Card = () => {
               ))}
             </div>
           </div>
-          <span className="text-xl">
-            <span className="sr-only">Price</span>$99.99
-          </span>
+          <div>
+  <span className="sr-only">Price</span>
+  <span className="line-through">{data?.price?.old} BDT</span>
+  <span className="text-xl">
+    <span className="sr-only">Price</span>{data?.price?.new} BDT
+  </span>
+</div>
+
         </div>
         <p
           id="productDescription"
           className="mb-2 text-pretty text-sm"
         >
-          The Casio G-Shock GA2100 is simply designed for easy
-          timekeeping, featuring a sleek profile and clear display.
+         We only offer the Fast-track 15 days to those who already have completed the Premium 8 weeks / Conclusive Mocks.
         </p>
         {/* Button */}
         <Link href={'/courses/123'}

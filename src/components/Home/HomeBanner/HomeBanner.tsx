@@ -17,9 +17,10 @@ const HomeBanner = () => {
   );
 
   const data = [
-    'https://images.pexels.com/photos/27927887/pexels-photo-27927887/free-photo-of-a-large-square-with-people-walking-around.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    '/banner/iZonesBanner.jpg',
+    // 'https://images.pexels.com/photos/27927887/pexels-photo-27927887/free-photo-of-a-large-square-with-people-walking-around.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    // 'https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    // 'https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   ];
 
   return (
@@ -31,7 +32,7 @@ const HomeBanner = () => {
         onMouseLeave={autoplay.current.reset} // Resume autoplay on mouse leave
       >
         <CarouselContent>
-          {data.map((img, index) => (
+          {data?.map((img, index) => (
             <CarouselItem key={index} className="w-[50%]">
               <div className="p-1">
                 <Card className="w-full h-[500px]">

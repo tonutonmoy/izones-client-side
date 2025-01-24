@@ -2,7 +2,7 @@ import Container from "@/SharedComponent/Container/Container";
 import HomeBanner from "./HomeBanner/HomeBanner";
 import Courses from "./Courses/Courses";
 import Advertisement from "./Advertisement/Advertisement";
-import Blogs from "./Blogs/Blogs";
+// import Blogs from "./Blogs/Blogs";
 import About from "./About/About";
 import Question from "@/SharedComponent/Question/Question";
 
@@ -14,7 +14,7 @@ const HomePage = () => {
       <About/>
       
       <Advertisement/>
-      <Blogs/>
+      {/* <Blogs/> */}
       <Question/>
     </Container>
   );
