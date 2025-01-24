@@ -8,7 +8,7 @@ const About = () => {
 <SectionTitle title='About us'/>
     
 <section className=" relative xl:mr-0 lg:mr-5 mr-0">
-      <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+      <div className="w-full ">
         <div className="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
           {/* Left Section */}
           <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
@@ -87,7 +87,7 @@ const About = () => {
             </button>
           </div>
           {/* Right Section */}
-          <div className="w-full lg:justify-start justify-center items-start flex  ">
+          <div className="w-full  justify-center items-start flex  ">
             <div className="sm:w-[564px] w-full sm:h-[646px]  h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200  relative ">
               <img
                 className="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover hover:translate-y-10  duration-500 "

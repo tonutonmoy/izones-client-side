@@ -15,7 +15,7 @@ function Question() {
   const [activeItem, setActiveItem] = useState("item-1");  // Keeps track of the open item
 
   return (
-    <Accordion type="single" collapsible value={activeItem} onValueChange={setActiveItem} className="w-full">
+    <Accordion type="single" collapsible value={activeItem} onValueChange={setActiveItem} className="w-full mt-20">
       {questionsData.map((item, index) => (
         <AccordionItem key={index} value={`item-${index + 1}`}>
           <AccordionTrigger className="text-xl font-bold">{item.question}</AccordionTrigger>

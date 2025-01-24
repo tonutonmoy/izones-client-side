@@ -3,7 +3,7 @@ import React from 'react';
 
 const Card = ({data}:any) => {
   return (
-    <article className="group transition duration-200  hover:scale-105 flex rounded-md max-w-sm flex-col overflow-hidden border border-neutral-300 bg-neutral-50 hover:bg-orange-50 text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
+    <article className="group  transition duration-200  hover:scale-105 flex rounded-md max-w-sm flex-col overflow-hidden border border-neutral-300 bg-neutral-50 hover:bg-orange-50 text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
       {/* Image */}
       <div className="h-44 md:h-64 overflow-hidden">
         <img
@@ -64,20 +64,34 @@ const Card = ({data}:any) => {
           <div>
   <span className="sr-only">Price</span>
   <span className="line-through">{data?.price?.old} BDT</span>
-  <span className="text-xl">
+  <span className="text-xl ms-10 md:ms-0">
     <span className="sr-only">Price</span>{data?.price?.new} BDT
   </span>
 </div>
 
         </div>
+
+        <div>
+          <p ><span className=' font-semibold'>Duration:</span> {data?.duration}</p>
+         {data?.numberOfClasses&&  <p ><span className=' font-semibold'>Number Of Classes:</span> {data?.numberOfClasses}</p>} 
+         {data?.oneOnOneClasses && <p ><span className=' font-semibold'>One-1 Classes:</span> {data?.oneOnOneClasses}</p>}  
+          {data?.numberOfMockTests && <p ><span className=' font-semibold'> Number Of MockTests: </span>{data?.numberOfMockTests}</p>} 
+
+         {data?.numberOfMockTests && <p ><span className=' font-semibold'>Total Test Reviews:</span> {data?.numberOfMockTests}</p>}   
+        </div>
+
+        <div>
         <p
           id="productDescription"
           className="mb-2 text-pretty text-sm"
         >
-         We only offer the Fast-track 15 days to those who already have completed the Premium 8 weeks / Conclusive Mocks.
+       <span className=' font-semibold text-[15px]'> Note:</span>
+        <span> We only offer the Fast-track 15 days to those who already have completed the Premium 8 weeks / Conclusive Mocks.</span>
         </p>
+        </div>
+      
         {/* Button */}
-        <Link href={'/courses/123'}
+        <Link href={'https://www.facebook.com/profile.php?id=61571096711271'}
          
           className="flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap bg-black px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-100 transition   dark:text-black dark:focus-visible:outline-white rounded-md "
         >

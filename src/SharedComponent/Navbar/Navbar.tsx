@@ -59,11 +59,11 @@ const Navbar = () => {
             {/* Navigation Items */}
             <div className="hidden sm:flex sm:ml-6 sm:flex-1 justify-center space-x-4">
               <Link
-                href="/dashboard"
+                href="/"
                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 aria-current="page"
               >
-                Dashboard
+                Home
               </Link>
               <Link
                 href="/courses"
@@ -78,10 +78,10 @@ const Navbar = () => {
                 Services
               </Link>
               <Link
-                href="/blogs"
+                href="/contact"
                 className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Blogs
+                Contact
               </Link>
             </div>
             
@@ -153,30 +153,30 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="sm:hidden" id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              <Link
-                href="/dashboard"
+              <Link onClick={()=> setMobileMenuOpen(false)}
+                href="/"
                 className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
                 aria-current="page"
               >
-                Dashboard
+                Home
               </Link>
-              <Link
+              <Link onClick={()=> setMobileMenuOpen(false)}
                 href="/courses"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
                 Courses
               </Link>
-              <Link
+              <Link onClick={()=> setMobileMenuOpen(false)}
                 href="/services"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
                 Services
               </Link>
-              <Link
-                href="/blogs"
+              <Link onClick={()=> setMobileMenuOpen(false)}
+                href="/contact"
                 className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >
-                Blogs
+                Contact 
               </Link>
             </div>
           </div>

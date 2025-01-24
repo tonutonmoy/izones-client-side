@@ -42,7 +42,7 @@ const Courses = () => {
     <div>
       <SectionTitle title="Our Courses"/>
 
-      <div className=" gap-10 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-5">
+      <div className=" gap-10 grid md:grid-cols-2  xl:grid-cols-4 3xl:grid-cols-5">
         {data?.map((course)=><Card data={course}/>)}
       </div>
     </div>

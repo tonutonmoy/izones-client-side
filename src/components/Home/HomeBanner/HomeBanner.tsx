@@ -35,10 +35,10 @@ const HomeBanner = () => {
           {data?.map((img, index) => (
             <CarouselItem key={index} className="w-[50%]">
               <div className="p-1">
-                <Card className="w-full h-[500px]">
+                <Card className="w-full h-[300px]  lg:h-[500px]">
                   <CardContent className="relative w-full h-full p-0">
                     <img
-                      className="h-full w-full object-cover p-1 rounded-xl"
+                      className="h-full w-full object-fill p-1 rounded-xl"
                       src={img}
                       alt=""
                     />
