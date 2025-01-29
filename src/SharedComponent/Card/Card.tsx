@@ -1,13 +1,16 @@
+'use client'
 import Link from 'next/link';
 import React from 'react';
 
 const Card = ({data}:any) => {
+
+  
   return (
     <article className="group  transition duration-200  hover:scale-105 flex rounded-md max-w-sm flex-col overflow-hidden border border-neutral-300 bg-neutral-50 hover:bg-orange-50 text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
       {/* Image */}
       <div className="h-44 md:h-64 overflow-hidden">
         <img
-          src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp"
+          src={'https://images.pexels.com/photos/5212338/pexels-photo-5212338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
           className="object-cover transition duration-700 ease-out group-hover:scale-105"
           alt="CASIO G-SHOCK GA2100, Black face, black bands"
         />

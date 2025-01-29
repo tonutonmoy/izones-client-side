@@ -14,7 +14,7 @@ const Advertisement = () => {
         
          className="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800 uppercase">contact us</Link>
       </div>
-      <div className="order-1 lg:order-2">
+      <div className="order-1 lg:order-2 ">
         <img
           className="h-80 w-80 object-fill lg:w-[500px] lg:h-[500px]"
           src="./advertisement/advertisement.jpg"
