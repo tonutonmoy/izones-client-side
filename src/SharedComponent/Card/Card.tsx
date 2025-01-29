@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const Card = ({data}:any) => {
+  
 
   
   return (
@@ -96,7 +97,7 @@ const Card = ({data}:any) => {
         {/* Button */}
         <Link href={'https://www.facebook.com/profile.php?id=61571096711271'}
          
-          className="flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap bg-black px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-100 transition   dark:text-black dark:focus-visible:outline-white rounded-md "
+          className="flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap bg-black px-4 py-2 text-center text-sm font-medium tracking-wide text-neutral-100 transition dark:bg-orange-500 dark:text-white   dark:focus-visible:outline-white rounded-md "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

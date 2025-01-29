@@ -19,7 +19,7 @@ function Question() {
       {questionsData.map((item, index) => (
         <AccordionItem key={index} value={`item-${index + 1}`}>
           <AccordionTrigger className="text-xl font-bold">{item.question}</AccordionTrigger>
-          <AccordionContent className="text-gray-500 text-lg">{item.answer}</AccordionContent>
+          <AccordionContent className=" dark:text-gray-300 text-gray-500 text-lg">{item.answer}</AccordionContent>
         </AccordionItem>
       ))}
   

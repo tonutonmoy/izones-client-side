@@ -3,7 +3,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="bg-gray-50 "id="contact">
+    <section className="dark:bg-black bg-gray-50 py-10 "id="contact">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mb-4">
           <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -13,7 +13,7 @@ const Contact = () => {
             <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
               Get in Touch
             </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-white">
               In hac habitasse platea dictumst
             </p>
           </div>
@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="flex items-stretch justify-center">
           <div className="grid md:grid-cols-2">
             <div className="h-full pr-6">
-              <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+              <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-white">
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.
               </p>
               <ul className="mb-6 md:mb-0">
@@ -34,8 +34,8 @@ const Contact = () => {
                   </div>
                   <div className="ml-4 mb-4">
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address</h3>
-                    <p className="text-gray-600 dark:text-slate-400">Sk's iZone, Winnipeg, MB </p>
-                    <p className="text-gray-600 dark:text-slate-400">Canada, Manitoba</p>
+                    <p className="text-gray-600 dark:text-white">Sk's iZone, Winnipeg, MB </p>
+                    <p className="text-gray-600 dark:text-white">Canada, Manitoba</p>
                   </div>
                 </li>
                 <li className="flex">
@@ -48,8 +48,8 @@ const Contact = () => {
                   </div>
                   <div className="ml-4 mb-4">
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact</h3>
-                    <p className="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
-                    <p className="text-gray-600 dark:text-slate-400">Mail: izonesinfo@gmail.com</p>
+                    <p className="text-gray-600 dark:text-white">Mobile: +1 (123) 456-7890</p>
+                    <p className="text-gray-600 dark:text-white">Mail: izonesinfo@gmail.com</p>
                   </div>
                 </li>
                 <li className="flex">
@@ -61,8 +61,8 @@ const Contact = () => {
                   </div>
                   <div className="ml-4 mb-4">
                     <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working hours</h3>
-                    <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                    <p className="text-gray-600 dark:text-slate-400">Saturday & Sunday: 08:00 - 12:00</p>
+                    <p className="text-gray-600 dark:text-white">Monday - Friday: 08:00 - 17:00</p>
+                    <p className="text-gray-600 dark:text-white">Saturday & Sunday: 08:00 - 12:00</p>
                   </div>
                 </li>
               </ul>
@@ -79,7 +79,7 @@ const Contact = () => {
                         id="name"
                         autoComplete="given-name"
                         placeholder="Your name"
-                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-white sm:mb-0"
                         name="name"
                       />
                     </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                         id="email"
                         autoComplete="email"
                         placeholder="Your email address"
-                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-white sm:mb-0"
                         name="email"
                       />
                     </div>
@@ -103,12 +103,12 @@ const Contact = () => {
                       cols={30}
                       rows={5}
                       placeholder="Write your message..."
-                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-white sm:mb-0"
                     ></textarea>
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit" className="w-full bg-gray-900 text-white px-6 py-3 font-xl rounded-md sm:mb-0">
+                  <button type="submit" className="w-full dark:bg-orange-500 bg-gray-900 text-white px-6 py-3 font-xl rounded-md sm:mb-0">
                     Send Message
                   </button>
                 </div>

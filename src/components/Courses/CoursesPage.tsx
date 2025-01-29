@@ -1,4 +1,4 @@
-
+'use client'
 import Card from "@/SharedComponent/Card/Card";
 import SectionTitle from "@/SharedComponent/SectionTitle/SectionTitle";
 
@@ -36,9 +36,9 @@ const CoursesPage = () => {
       eligibility: "Must complete Premium 8 weeks or Conclusive Mocks"
     }
   ];
-  
+  console.log(data,'lslslsl')
   return (
-    <div>
+    <div className=" pb-10">
     <SectionTitle title="All Courses"/>
 
 <div className=" gap-10 grid md:grid-cols-2  xl:grid-cols-4 3xl:grid-cols-5 ">

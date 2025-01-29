@@ -24,7 +24,7 @@ const HomeBanner = () => {
   ];
 
   return (
-    <div >
+    <div className=" mt-32" >
       <Carousel
         plugins={[autoplay.current]}
         className="w-full group" // Ensure 'group' is correctly added to the carousel wrapper

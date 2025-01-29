@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import React, { useState } from "react";
+import DarkMode from "../DarkMode/DarkMode";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-gray-800">
+      <nav className="bg-gray-800 fixed  z-50 w-full top-0">
         <div className="mx-auto w-[90%]">
           <div className="relative flex h-16 items-center justify-between">
             {/* Mobile menu button */}
@@ -57,7 +58,7 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Items */}
-            <div className="hidden sm:flex sm:ml-6 sm:flex-1 justify-center space-x-4">
+            <div className="hidden sm:flex sm:ml-6 sm:flex-1 justify-center items-start space-x-4">
               <Link
                 href="/"
                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
@@ -83,7 +84,9 @@ const Navbar = () => {
               >
                 Contact
               </Link>
+             
             </div>
+            <DarkMode/>
             
             {/* Profile & Notifications */}
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -178,6 +181,11 @@ const Navbar = () => {
               >
                 Contact 
               </Link>
+
+              
+            </div>
+            <div className=" ms-5 pb-5">
+            <DarkMode/>
             </div>
           </div>
         )}
