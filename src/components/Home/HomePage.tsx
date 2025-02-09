@@ -8,8 +8,11 @@ import Question from "@/SharedComponent/Question/Question";
 
 const HomePage = () => {
   return (
-    <Container>
+   <div>
+
+   
       <HomeBanner/>
+      <Container>
       <Courses/>
       <About/>
       
@@ -17,6 +20,7 @@ const HomePage = () => {
       {/* <Blogs/> */}
       <Question/>
     </Container>
+    </div>
   );
 };
 
