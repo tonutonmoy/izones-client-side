@@ -5,6 +5,7 @@ import Advertisement from "./Advertisement/Advertisement";
 // import Blogs from "./Blogs/Blogs";
 import About from "./About/About";
 import Question from "@/SharedComponent/Question/Question";
+import Instructor from "./Instructor/Instructor";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <HomeBanner/>
       <Container>
       <Courses/>
+      <Instructor/>
       <About/>
       
       <Advertisement/>

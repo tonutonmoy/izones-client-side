@@ -4,7 +4,7 @@ import SectionTitle from "@/SharedComponent/SectionTitle/SectionTitle";
 
 const Courses = () => {
   const data = [
-    {img:'',
+    {img:'courses/courses1.jpg',
       name: "Premium 8 weeks",
       price: {
         old: 11900,
@@ -14,7 +14,7 @@ const Courses = () => {
       numberOfClasses: 24,
       oneOnOneClasses: 8
     },
-    {img:'',
+    {img:'courses/courses2.jpg',
       name: "Conclusive Mocks",
       price: {
         old: 2900,
@@ -24,7 +24,7 @@ const Courses = () => {
       numberOfMockTests: 4,
       totalTestReviews: 4
     },
-    {img:'',
+    {img:'courses/courses3.jpg',
       name: "Fast-track 15 days",
       price: {
         old: 4900,
